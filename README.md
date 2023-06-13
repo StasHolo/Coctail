@@ -1,3 +1,5 @@
+https://stasholo.github.io/Coctail/
+
 # Cocktail Finder
 
 Welcome to Cocktail Finder, a service that allows you to search for various cocktails and explore their details, including images, descriptions, and the required ingredients. Whether you're a bartender looking for new recipes or simply a cocktail enthusiast eager to discover exciting drink options, Cocktail Finder has got you covered.

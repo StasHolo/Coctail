@@ -1,0 +1,72 @@
+
+body{
+    margin: 0;
+}
+.bar{
+    background-color: #54357A;
+    color:  white;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+.bar > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 1000px;
+    justify-content: space-between;
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    height: calc(100vh - 180px);
+    width: 1000px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-block{
+    width: 250px ;
+    height: 300px ;
+    margin-bottom: 160px !important;
+    margin: 10px ;
+    display: inline-block ;
+    background-size: cover !important;
+}
+.input-search{
+    height: 45%;
+    width: 500px;
+    top: 19px;
+    border-radius: 40px;
+    padding: 12px 24px 12px 24px;
+}
+.btn-reset{
+    height: 45%;
+    width: 158px;
+    top: 19px;
+    border-radius: 40px;
+    padding: 16px 40px 16px 40px;
+    text-align: center;
+    padding: initial;
+}
+.coctail-image{
+    width: 250px;
+    height: 200px;
+}
+.name-coctail{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.coctail-desc{
+    margin-top: 0;
+    font-size: 12px;
+    text-align: center;
+}
+

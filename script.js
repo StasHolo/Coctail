@@ -31,7 +31,7 @@ const inputText = searchInput.value
 
                 
 
-            for (kol = 1; kol < otvet.drinks.length; kol++){
+            for (kol = 0; kol < otvet.drinks.length; kol++){
             const coctail = otvet.drinks[kol]
             
             const title = coctail.strDrink
@@ -44,12 +44,15 @@ const inputText = searchInput.value
             
 
             const ingredients = []
+            const measures = []
 
             //content.list.innerHTML =''
             for (let i = 1; i < 15; i++){
                 const ingr = coctail[`strIngredient${i}`]
+                const meas = coctail[`strMeasure${i}`]
                 if (ingr !== null){
                     ingredients.push(ingr)
+                    measures.push(meas)
                     //const li = document.createElement('li')
                     //li.innerHTML = ingr
                     //content.list.append(li)
@@ -75,13 +78,19 @@ const inputText = searchInput.value
             contentBlock.appendChild(descriptionElement);
 
             const ingredientsListElement = document.createElement('ul');
-            ingredients.forEach((ingr) => {
+            ingredients.forEach((ingr, meas) => {
                 const li = document.createElement('li');
-                li.innerHTML = ingr;
+                li.innerHTML = `${ingr} - ${measures[meas]}`;
                 ingredientsListElement.appendChild(li);
             });
             ingredientsListElement.classList.add('coctail-ingr');
             contentBlock.appendChild(ingredientsListElement);
+
+            /*measures.forEach((meas) => {
+                const li = document.createElement('li');
+                li.innerHTML = meas;
+                ingredientsListElement.appendChild(li);
+            });*/
 
             //contentBlock.style.background = `url(${imageUrl})`  // Выводим на экран полученные параметры
 
